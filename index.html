@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фотоальбом — Бондаренко Олександр</title>
+<style>
+:root {
+    --bg:#111315;
+    --panel:#191c20;
+    --text:#f3f3f3;
+    --muted:#9ea4ab;
+    --line:#34383e;
+}
+* { box-sizing:border-box; }
+body {
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,Helvetica,sans-serif;
+}
+.wrap {
+    width:min(1180px, calc(100% - 48px));
+    margin:0 auto;
+    padding:54px 0 72px;
+}
+header {
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:24px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:24px;
+    margin-bottom:28px;
+}
+.kicker {
+    color:var(--muted);
+    font-size:12px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+h1 {
+    margin:8px 0 0;
+    font-size:42px;
+    font-weight:600;
+    letter-spacing:-.03em;
+}
+.meta {
+    color:var(--muted);
+    text-align:right;
+    line-height:1.5;
+}
+.grid {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px;
+}
+.card {
+    margin:0;
+    background:var(--panel);
+    border:1px solid var(--line);
+    overflow:hidden;
+}
+.card img {
+    display:block;
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+.card figcaption {
+    padding:13px 15px;
+    color:var(--muted);
+    font-size:13px;
+}
+footer {
+    margin-top:30px;
+    color:var(--muted);
+    font-size:12px;
+}
+@media (max-width:800px) {
+    .grid { grid-template-columns:1fr; }
+    header { align-items:start; flex-direction:column; }
+    .meta { text-align:left; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="kicker">Git remote repository / practice 1.4</div>
+    <h1>Фотоальбом</h1>
+  </div>
+  <div class="meta">Бондаренко Олександр<br>група 42</div>
+</header>
+<main class="grid">
+
+            <figure class="card">
+              <img src="images/album_01.jpg" alt="Фото 1">
+              <figcaption>Кадр 01</figcaption>
+            </figure>
+            
+            <figure class="card">
+              <img src="images/album_02.jpg" alt="Фото 2">
+              <figcaption>Кадр 02</figcaption>
+            </figure>
+            
+            <figure class="card">
+              <img src="images/album_03.jpg" alt="Фото 3">
+              <figcaption>Кадр 03</figcaption>
+            </figure>
+            
+            <figure class="card">
+              <img src="images/album_04.jpg" alt="Фото 4">
+              <figcaption>Кадр 04</figcaption>
+            </figure>
+            
+            <figure class="card">
+              <img src="images/album_05.jpg" alt="Фото 5">
+              <figcaption>Кадр 05</figcaption>
+            </figure>
+            
+            <figure class="card">
+              <img src="images/album_06.jpg" alt="Фото 6">
+              <figcaption>Кадр 06</figcaption>
+            </figure>
+            
+</main>
+<footer>Основи програмної інженерії 2026-2027</footer>
+</div>
+</body>
+</html>
